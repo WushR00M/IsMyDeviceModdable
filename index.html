@@ -533,9 +533,50 @@ pre code {
 		<li>
 			<a href="#" onclick="return show('ps3','home');">PlayStation 3</a>
 		</li>
+		<li>
+			<a href="#" onclick="return show('switch','home');">Nintendo Switch</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('psp','home');">PlayStation Portable</a>
+		</li>
 	</ul>
   </div>
     
+	<div id="psp" style="display:none">
+    <h1>Select your model:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('psp123','psp');">PSP 1000 - 3000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('pspSPO','psp');">PSP Sport (E1000)</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show(pspGO','psp');">PSP Go</a>
+		</li>
+	</ul>
+  </div>
+  
+  <div id="psp123" style="display:none">
+    <h1>You selected: PSP 1000 - 3000</h1>
+	<p>Good news! You can mod your console, and there's no important extra notes too!</p>
+  </div>
+
+	<div id="pspGO" style="display:none">
+    <h1>You selected: PSP Go</h1>
+	<p>Good news! You can mod your console, however there are some things to know:</p>
+	<ul>
+		<li>
+			<p>PSP Go is known for having weird side effects, such as game suspension not working as intended.</p>
+		</li>
+	</ul>
+  </div>
+  
+	<div id="pspSPO" style="display:none">
+    <h1>You selected: PSP Sport (E1000)</h1>
+	<p>You MIGHT be out of luck! This model is known to fail when it comes to modding, with a cheap build quality, zero internet support, and no permanent CFW patch.</p>
+  </div>
+
   <div id="xbox360" style="display:none">
     <h1>Select your model:</h1>
 	<ul>
@@ -550,6 +591,7 @@ pre code {
 		</li>
 	</ul>
   </div>
+  
 
   <div id="360phel" style="display:none">
     <h1>Select your console's motherboard:</h1>
@@ -752,5 +794,162 @@ pre code {
   <div id="PS3sslm" style="display:none">
     <h1>You selected PS3 Super Slim</h1>
 	<p>You're out of luck! It is impossible to downgrade to 3.55 and/or install CFW on Super Slims.</p> 
+	</div>
+	
+	<div id="switch" style="display:none">
+	<p>NOTICE: If you have a Switch Lite or a Switch OLED, you cannot mod it!</p>
+    <h1>Select what the serial number on your Switch starts with:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('XAW1','switch');">XAW1</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('XAW4','switch');">XAW4</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('XAW7','switch');">XAW7</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('XAJ1','switch');">XAJ1</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('XAJ4','switch');">XAJ4</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('XAJ7','switch');">XAJ7</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('XAW9','switch');">XAW9</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('switchO','switch');">XKW# / XKJ# / Other</a>
+		</li>
+	</ul>
+	<p>(To find your Switch serial, look on the bottom of the Switch's screen for a tag with numbers. That's your serial!)</p>
+	<p>If your serial beginning isn't listed here, your Switch is most likely unmoddable.</p>
+  </div>
+  
+  <div id="switchO" style="display:none">
+    <h1>You selected: Nintendo Switch with Serial Beginning: XKW# / XKJ# / Other</h1>
+	<p>You're out of luck! In these consoles, there is a new motherboard that patches the only methods of modding.</p> 
+	</div>
+	
+	<div id="XAW1" style="display:none">
+    <h1>Select your range of serial numbers:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('valid','XAW1');">XAW10000000000 - XAW10065000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('maybe','XAW1');">XAW10066000000 - XAW10120000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('cant','XAW1');">XAW10120000000+</a>
+		</li>
+	</ul>
+	</div>
+	
+	<div id="XAW4" style="display:none">
+    <h1>Select your range of serial numbers:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('valid','XAW4');">XAW40000000000 - XAW40011000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('maybe','XAW4');">XAW40011000000 - XAW40012000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('cant','XAW4');">XAW40012000000+</a>
+		</li>
+	</ul>
+	</div>
+	
+	<div id="XAW7" style="display:none">
+    <h1>Select your range of serial numbers:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('valid','XAW7');">XAW70000000000 - XAW70017500000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('maybe','XAW7');">XAW70017500000 - XAW70030000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('cant','XAW7');">XAW70030000000+</a>
+		</li>
+	</ul>
+	</div>
+	
+	<div id="XAJ1" style="display:none">
+    <h1>Select your range of serial numbers:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('valid','XAJ1');">XAJ10000000000 - XAJ10020000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('maybe','XAJ1');">XAJ10020000000 - XAJ10030000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('cant','XAJ1');">XAJ10030000000+</a>
+		</li>
+	</ul>
+	</div>
+	
+	<div id="XAJ4" style="display:none">
+    <h1>Select your range of serial numbers:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('valid','XAJ4');">XAJ40000000000 - XAJ40044000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('maybe','XAJ4');">XAJ40044000000 - XAJ40083000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('cant','XAJ4');">XAJ40083000000+</a>
+		</li>
+	</ul>
+	</div>
+	
+	<div id="XAJ7" style="display:none">
+    <h1>Select your range of serial numbers:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('valid','XAJ7');">XAJ70000000000 - XAJ70040000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('maybe','XAJ7');">XAJ70040000000 - XAJ70050000000</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('cant','XAJ7');">XAJ70050000000 +</a>
+		</li>
+	</ul>
+	</div>
+	
+	<div id="valid" style="display:none">
+    <h1>You selected: Nintendo Switch with Serial Beginning: XAW9</h1>
+	<p>Good news! The serial range you selected is not patched and you can happily mod your console!</p> 
+	</div>
+	
+	<div id="maybe" style="display:none">
+    <h1>You selected: Nintendo Switch</h1>
+	<p>You MIGHT be out of luck. Most of these consoles with this serial beginning are patched, however there are the lucky few that aren't!</p> 
+	</div>
+	
+	<div id="cant" style="display:none">
+    <h1>You selected: Nintendo Switch</h1>
+	<p>You're out of luck. The consoles with the serial range you selected are patched.</p>
+	</div>
+	
+	<div id="XAW9" style="display:none">
+    <h1>You selected: Nintendo Switch with Serial Beginning: XAW9</h1>
+	<p>You MIGHT be out of luck. Most of these consoles with this serial beginning are patched, however there are the lucky few that aren't!</p> 
+	</div>
+
+	<footer>
+		<a href="https://consolemods.org/wiki/Main_Page">
+			<p>For further information on your results, visit the ConsoleMods wiki!</p>
+		</a>
+		<a href="./changelog.html">View Website Changelog</a>
+		<p>Created by WushR00M Studios</p>
+	</footer>
 </body>
 </html>
