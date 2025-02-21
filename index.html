@@ -539,8 +539,68 @@ pre code {
 		<li>
 			<a href="#" onclick="return show('psp','home');">PlayStation Portable</a>
 		</li>
+		<li>
+			<a href="#" onclick="return show('wii','home');">Nintendo Wii / Wii U</a>
+		</li>
+		
 	</ul>
   </div>
+  
+  <div id="wii" style="display:none">
+    <h1>Select your model:</h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('wiig','wii');">Nintendo Wii</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('wiib','wii');">Nintendo Wii Mini</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('wiiu','wii');">Nintendo Wii U</a>
+		</li>
+	</ul>
+  </div>
+  
+  <div id="wiib" style="display:none">
+    <h1>You selected: Wii Mini</h1>
+	<p>You're out of luck! The Wii Mini has test points for the NAND and a hardmod is available, but as soon as you were to start modifying that NAND, the signature would flag as invalid and it will not flash back. Also, every single homebrew app ever made is coded to look in the SD card for the required files and folders. The Wii Mini does not have an SD card slot, so absolutely no homebrew would run without significant modifications to them, which means you can't mod your console...</p>
+  </div>
+  
+  <div id="wiig" style="display:none">
+    <h1>Select your description: </h1>
+	<ul>
+		<li>
+			<a href="#" onclick="return show('boot1','wiig');">Original boot1</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('boot1f','wiig');">"Fixed" boot1</a>
+		</li>
+		<li>
+			<a href="#" onclick="return show('nogc','wiig');">No GameCube Ports / Accessory Ports</a>
+		</li>
+	</ul>
+  </div>
+  
+  <div id="boot1" style="display:none">
+    <h1>You selected: Wii with boot1</h1>
+	<p>Good news! You can mod your console, and there's no important extra notes too!</p>
+  </div>
+  
+  <div id="boot1f" style="display:none">
+    <h1>You selected: Wii with Fixed boot1</h1>
+	<p>You're out of luck! Some time in 2008 , Nintendo fixed the "strncmp" bug in boot1 for newly-manufactured Wiis, preventing boot2 from being modified by something like BootMii, which means you can't mod your console...</p>
+  </div>
+  
+  <div id="nogc" style="display:none">
+    <h1>You selected: Wii with No GameCube / Accessory Ports</h1>
+	<p>You're out of luck! No accessory ports or GameCube controller ports = no SD card ports for modding.</p>
+  </div>
+  
+  <div id="wiiu" style="display:none">
+    <h1>You selected: Wii U</h1>
+	<p>Good news! You can mod your console, and there's no important extra notes too!</p>
+  </div>
+ 
     
 	<div id="psp" style="display:none">
     <h1>Select your model:</h1>
@@ -552,7 +612,7 @@ pre code {
 			<a href="#" onclick="return show('pspSPO','psp');">PSP Sport (E1000)</a>
 		</li>
 		<li>
-			<a href="#" onclick="return show(pspGO','psp');">PSP Go</a>
+			<a href="#" onclick="return show('pspGO','psp');">PSP Go</a>
 		</li>
 	</ul>
   </div>
@@ -949,7 +1009,7 @@ pre code {
 			<p>For further information on your results, visit the ConsoleMods wiki!</p>
 		</a>
 		<a href="./changelog.html">View Website Changelog</a>
-		<p>Created by WushR00M Studios</p>
+		<a href="https://www.wushroomstudios.com">Created by WushR00M Studios</a>
 	</footer>
 </body>
 </html>
